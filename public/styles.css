@@ -1,0 +1,106 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.tilt-image {
+    width: 120vw; /* Make it 100% of the viewport width */
+    height: 120vh; /* Make it 100% of the viewport height */
+    background-image: url('images/home.jpg');
+    background-size: cover;
+    transition: transform 0.2s ease;
+}
+
+
+.main-text {
+    font-size: 80px;
+    font-family: "Work Sans";
+    margin: 0;
+}
+
+.main_text_container{
+    position: absolute;
+    z-index: 99;
+    color: white;
+    left: 10%;
+    bottom: 29%;
+}
+
+.part_text{
+    color: rgb(151, 149, 149);
+    font-size: 36px;
+    font-family: "Rubik";
+    line-height: 44px;
+}
+
+.navbar_{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    z-index: 99;
+    color: cornsilk;
+}
+
+.navbar-helper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.sub_nav{
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Rubik";
+}
+
+.main_nav{
+    font-size: 40px;
+    font-family: "Rubik";
+    margin: 0;
+}
+
+.form-control:focus {
+    background-color: #fff0 !important;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+
+.form-group{
+    position: absolute;
+    bottom: 15%;
+    width: 60%;
+    left: 10%;
+}
+
+textarea.form-control{
+    background-color: #fff0 !important;
+    color: rgb(238, 238, 238) !important;
+    font-size: 24px;
+    border-radius: 15px;
+    border-width: 2px;
+}
+
+textarea.form-control::placeholder {
+    color: #a0a0a083;
+}
+
+.textar{
+    color: rgb(151, 149, 149);
+    font-size: 24px;
+    
+    font-family: "Rubik";
+    margin-bottom: 6px;
+}
